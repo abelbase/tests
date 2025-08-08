@@ -28,19 +28,19 @@ public class Main {
 			Thread.sleep(2000);
 			WebElement NameElement = driver.findElement(By.id("inputName"));
 			NameElement.sendKeys("testuser");
-			Thread.sleep(1000);
+			
 			WebElement mbleElement = driver.findElement(By.id("inputNumber"));
 			mbleElement.sendKeys("1023192102!");
-			Thread.sleep(1000);
+			
 			WebElement emailElement = driver.findElement(By.id("inputMail"));
 			emailElement.sendKeys("testuser@abc.com");
-			Thread.sleep(1000);
+			
 			WebElement messageElement = driver.findElement(By.id("inputMessage"));
 			messageElement.sendKeys("Hello from testuser");
-			Thread.sleep(10000);
+			
 			WebElement sendElement = driver.findElement(By.id("my-button"));
 			sendElement.click();
-			Thread.sleep(8000);
+			
 			WebElement responseElement = driver.findElement(By.id("response"));
 			System.out.println(responseElement.getText());
 			driver.close();

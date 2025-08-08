@@ -23,7 +23,7 @@ public class Main {
 			options.addArguments("--no-sandbox","--disable-dev-shm-usage"); 
 			 options.addArguments("--remote-allow-origins=*");
 			//options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
-			WebDriver driver = new ChromeDriver();
+			WebDriver driver = new ChromeDriver(options);
 			driver.get("http://3.138.34.254:8081/contact.html");
 			Thread.sleep(2000);
 			WebElement NameElement = driver.findElement(By.id("inputName"));

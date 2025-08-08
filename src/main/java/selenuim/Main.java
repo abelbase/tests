@@ -19,7 +19,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		try {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
+			options.addArguments("--headless","--start-maximized");
 			options.addArguments("--no-sandbox","--disable-dev-shm-usage"); 
 			 options.addArguments("--remote-allow-origins=*");
 			//options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());

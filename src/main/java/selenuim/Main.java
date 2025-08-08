@@ -22,7 +22,7 @@ public class Main {
 			options.addArguments("--headless");
 			options.addArguments("--no-sandbox"); 
 			 options.addArguments("--remote-allow-origins=*");
-			options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
+			//options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
 			WebDriver driver = new ChromeDriver();
 			driver.get("http://3.138.34.254:8081/contact.html");
 			Thread.sleep(2000);

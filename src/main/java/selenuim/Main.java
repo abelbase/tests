@@ -20,6 +20,8 @@ public class Main {
 		try {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
+			options.addArguments("--no-sandbox"); 
+			options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
 			WebDriver driver = new ChromeDriver();
 			driver.get("http://3.138.34.254:8081/contact.html");
 			Thread.sleep(2000);

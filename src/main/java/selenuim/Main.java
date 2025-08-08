@@ -20,7 +20,7 @@ public class Main {
 		try {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
-			options.addArguments("--no-sandbox"); 
+			options.addArguments("--no-sandbox","--disable-dev-shm-usage"); 
 			 options.addArguments("--remote-allow-origins=*");
 			//options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
 			WebDriver driver = new ChromeDriver();

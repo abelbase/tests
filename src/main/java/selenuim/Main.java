@@ -41,6 +41,8 @@ public class Main {
 			WebElement sendElement = driver.findElement(By.id("my-button"));
 			sendElement.click();
 			Thread.sleep(8000);
+			WebElement responseElement = driver.findElement(By.id("response"));
+			System.out.println(responseElement.getText());
 			driver.close();
 		}catch(Exception e) {
 			e.printStackTrace();

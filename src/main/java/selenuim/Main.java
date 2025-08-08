@@ -19,7 +19,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		try {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+			options.addArguments("--headless");
 			WebDriver driver = new ChromeDriver();
 			driver.get("http://3.138.34.254:8081/contact.html");
 			Thread.sleep(2000);
